@@ -1,0 +1,34 @@
+Installation
+============
+
+.. HINT::
+
+  We currently support 64-bit version, if you need to run the software on the 32-bit machines please contact the PNA6 support e-mail address.
+
+Step 1: Download Installation File
+--------------------------
+   
+   Download installation file based on your operating system.
+
+   - `Windows`_: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
+   - `Linux`_: Modern Linux later than 2019 like Ubuntu 20.04, CentOS 7, OpenSUSE 15.1 and Arch Linux.
+   - `Linux [old version]`_: Other older machines.
+   
+   
+.. _Windows : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.exe
+
+.. _linux : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.run
+.. _Linux [old version] : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64-old.run
+   
+Step 2: Run Installation
+--------------------
+   
+Windows
+^^^^^^^^^
+	Install ``PNA.0.1-x64.exe`` file.
+
+   
+Linux
+^^^^^^^^^
+	Run ``./PNA.0.1-x64.run`` file from current user terminal. the installation prompt for ``root`` password if required.
+

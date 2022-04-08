@@ -1,0 +1,41 @@
+.. pna6 documentation master file, created by
+   sphinx-quickstart on Fri Apr  8 12:55:51 2022.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+A2B
+================================
+.. image:: _static/phoenix.png
+    :alt: k2 logo
+    :width: 168px
+    :align: center
+    :target: http://binaee.com/pna6.php
+
+.. HINT::
+
+  I'm a noob sphinx user trying to test its shitty features.
+
+Our Great `Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_ [#f1]_.
+
+.. [#f1] You can find BB at http://binaee.com/pna6.php
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   installation/pna_installation
+   quick/pna_quick
+   devmode/pna_devmode
+   ui/pna_ui
+   about/about_us
+   firmware/pna_firmware
+   
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

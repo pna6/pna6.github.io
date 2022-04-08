@@ -1,0 +1,68 @@
+Quick Start Guide
+=================
+
+Step 1: Open Application
+------------------------
+
+Windows
+^^^^^^^
+
+Open the start menu and type ``PNA``, start the shown-up |PNA_Icon| application.
+
+``PADSTACK SCREENSHOT WINDOWS HAM BEZAR``
+
+Linux
+^^^^^
+If you are in a gnome desktop environment, open the ``overview`` and type ``PNA``, then start the shown-up |PNA_Icon| application.
+
+.. |PNA_Icon| image:: ../_static/icon.png
+  :alt: logo pna_ui
+  :width: 22px
+
+.. image:: ../_static/PNA_Overview.png
+    :alt: logo pna_ui
+    :width: 700px
+    :align: center
+    
+Step 2: Connect to the Board
+----------------------------
+Select Board
+^^^^^^^^^^^^
+From the ``File`` menu, select the ``Board`` submenu and click on your desired board.
+
+.. image:: ../_static/PNA_Board.png
+    :alt: Board menu
+    :width: 700px
+    :align: center
+
+Select Interface
+^^^^^^^^^^^^^^^^
+Then from the ``File`` menu, select the ``Interface`` submenu and choose your interface.
+    
+Supported Interfaces
+""""""""""""""""""""
+- UART: UART interface is an easy and slow interface used for fast connectivity. Support up to 921600bps.
+- SSH: Easy and slow network interface. In this case, the PNA device should be in the subnet mask as the client software.
+- TCP: High-performance interface. Needs a powerful LAN network connection to reach its high-speed capabilities.
+    
+.. image:: ../_static/PNA_Intf.png
+    :alt: Interface menu
+    :width: 700px
+    :align: center
+    
+Step 3: Select Device Mode
+--------------------------
+
+Supported Device Modes
+""""""""""""""""""""""
+
+- Scope: High Speed I/Q Realtime Oscilloscope
+- Spectrum: Wideband Realtime Spectrum Analyzer
+- Signal: Arbitary Waveform I/Q Signal Generator
+- S Chart: Full 2-Port Vector Network Analyzer in ``Smith Chart`` Mode
+- B Plot: Full 2-Port Vector Network Analyzer in ``Frequency Response`` Mode
+
+.. image:: ../_static/PNA_Spectrum.png
+    :alt: Scope mode
+    :width: 700px
+    :align: center
