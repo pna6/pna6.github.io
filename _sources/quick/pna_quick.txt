@@ -9,7 +9,10 @@ Windows
 
 Open the start menu and type ``PNA``, start the shown-up |PNA_Icon| application.
 
-``PADSTACK SCREENSHOT WINDOWS HAM BEZAR``
+.. image:: ../_static/PNA_WIN.png
+    :alt: pna_win
+    :width: 700px
+    :align: center
 
 Linux
 ^^^^^
@@ -20,7 +23,7 @@ If you are in a gnome desktop environment, open the ``overview`` and type ``PNA`
   :width: 22px
 
 .. image:: ../_static/PNA_Overview.png
-    :alt: logo pna_ui
+    :alt: pna_overview
     :width: 700px
     :align: center
     
@@ -52,9 +55,6 @@ Supported Interfaces
     
 Step 3: Select Device Mode
 --------------------------
-
-Supported Device Modes
-""""""""""""""""""""""
 
 - Scope: High Speed I/Q Realtime Oscilloscope
 - Spectrum: Wideband Realtime Spectrum Analyzer

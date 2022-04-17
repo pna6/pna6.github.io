@@ -3,21 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-A2B
+PNA6 Wiki
 ================================
-.. image:: _static/phoenix.png
+.. image:: _static/PNA_logo.png
     :alt: k2 logo
     :width: 168px
     :align: center
-    :target: http://binaee.com/pna6.php
+    :target: https://pna6.github.io/
 
-.. HINT::
-
-  I'm a noob sphinx user trying to test its shitty features.
-
-Our Great `Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_ [#f1]_.
-
-.. [#f1] You can find BB at http://binaee.com/pna6.php
+This wiki provides developers using PNA with software and documentation, including firmware code, software installation, and quick start guide for board setup. It also contains user guides for PNA-UI to help engineers get up and running fast. Our Great `Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_.
 
 Contents:
 
@@ -31,6 +25,12 @@ Contents:
    ui/pna_ui
    about/about_us
    firmware/pna_firmware
+
+.. HINT::
+
+  I'm a noob sphinx user trying to test its shitty features. [#f1]_
+
+.. [#f1] You can find BB at http://binaee.com/pna6.php
    
 Indices and tables
 ==================

@@ -10,15 +10,16 @@ Step 1: Download Installation File
    
    Download installation file based on your operating system.
 
-   - `Windows`_: Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
-   - `Linux`_: Modern Linux later than 2019 like Ubuntu 20.04, CentOS 7, OpenSUSE 15.1 and Arch Linux.
-   - `Linux [old version]`_: Other older machines.
+   - `Windows PNA.0.1-x64.exe`_: Supports Windows 7, Windows 8, Windows 8.1, Windows 10, Windows 11
+   - `Linux PNA.0.1-x64.run`_: Supports Modern Linux later than 2019 like Ubuntu 20.04, CentOS 7, OpenSUSE 15.1 and Arch Linux.
+   - `Linux PNA.0.1-x64-old.run`_: Supports Other older machines.
    
    
-.. _Windows : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.exe
+.. _Windows PNA.0.1-x64.exe : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.exe
 
-.. _linux : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.run
-.. _Linux [old version] : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64-old.run
+.. _Linux PNA.0.1-x64.run : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64.run
+
+.. _Linux PNA.0.1-x64-old.run : https://github.com/pna6/pna6.github.io/releases/download/v0.1-alpha/PNA.0.1-x64-old.run
    
 Step 2: Run Installation
 --------------------
