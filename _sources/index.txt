@@ -13,8 +13,6 @@ PNA6 Wiki
 
 This wiki provides developers using PNA with software and documentation, including firmware code, software installation, and quick start guide for board setup. It also contains user guides for PNA-UI to help engineers get up and running fast. Our Great `Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_.
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
