@@ -1,0 +1,210 @@
+Receiver Settings
+-----------------
+
+Receiver Bandwidth
+==================
+
+.. code-block:: bash
+
+  rx_bandwidth bw
+
+* ``bw (float)`` : bandwidth in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 200
+     - 56000
+     - KHz
+     
+.. NOTE::
+
+  Set ``bw`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``bw`` value. example: ``100M``.
+
+.. HINT::
+
+  Without entering ``bw`` argument, receiver bandwidth could be read.
+
+Receiver LNA
+============
+
+.. code-block:: bash
+
+  lna channel gain
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``gain (int)`` : lna gain in terms of ``db``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - -3
+     - 71
+     - dB
+     
+.. CAUTION::
+
+	``lna`` setting is accessible only when ``agc`` is set to ``manual``.
+     
+.. HINT::
+
+  Without entering ``gain`` argument, desired receiver LNA could be read.
+     
+Receiver AGC
+============
+
+.. code-block:: bash
+
+  agc channel mode
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``mode (string)`` : AGC modes.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Modes
+     - Description
+   * - ``hyb``
+     - Hybrid
+   * - ``slo``
+     - Slow Attack
+   * - ``fas``
+     - Fast Attack
+   * - ``man``
+     - Manual
+
+.. HINT::
+
+  Without entering ``mode`` argument, desired receiver AGC state could be read.
+
+Receiver Sampling Rate
+======================
+
+.. code-block:: bash
+
+  rx_sample_rate rate
+
+* ``rate (float)`` : sampling rate in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 2100
+     - 61440
+     - KHz
+     
+.. NOTE::
+
+	Set ``rate`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``rate`` value. example: ``100M``.
+
+.. HINT::
+
+  Without entering ``rate`` argument, receiver sampling rate could be read.
+	
+Receiver LO Frequency
+=====================
+
+.. code-block:: bash
+
+  rx_freq freq
+  
+* ``freq (float)`` : sampling rate in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 70
+     - 6000
+     - MHz
+     
+.. NOTE::
+
+	Set ``freq`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``freq`` value. example: ``100M``.
+
+.. HINT::
+
+  Without entering ``freq`` argument, receiver LO-frequency could be read.
+
+Receiver Port Setting
+=====================
+
+.. code-block:: bash
+
+  rx_port port
+  
+* ``port (string)`` : receiver port id, example: ``A``/``B``/``C``.
+
+.. HINT::
+
+  Without entering ``port`` argument, selected receiver port could be read.
+
+Receiver Baseband DC Offset Tracking
+====================================
+
+.. code-block:: bash
+
+  bbdc en
+  
+* ``en (int)`` : enable/disable receiver baseband DC offset tracking.
+
+.. HINT::
+
+  Without entering ``en`` argument, receiver baseband DC offset tracking state could be read.
+
+Receiver RF DC Offset Tracking
+==============================
+
+.. code-block:: bash
+
+  rfdc en
+  
+* ``en (int)`` : enable/disable receiver RF DC offset tracking.
+
+.. HINT::
+
+  Without entering ``en`` argument, receiver RF DC offset tracking state could be read.
+
+Receiver Quadrature Tracking
+============================
+
+.. code-block:: bash
+
+  bbdc en
+  
+* ``en (int)`` : enable/disable receiver quadrature tracking.
+
+.. HINT::
+
+  Without entering ``en`` argument, receiver quadrature tracking state could be read.
+
+Receiver FIR Filter Enable
+==========================
+
+.. code-block:: bash
+
+  rx_fir_en en
+  
+* ``en (int)`` : enable/disable receiver FIR filter.
+
+.. HINT::
+
+  Without entering ``en`` argument, receiver FIR filter enabled state could be read.
+

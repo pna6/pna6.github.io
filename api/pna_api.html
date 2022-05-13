@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; PNA6 1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="PNA6 1 documentation" href="../index.html"/>
+        <link rel="next" title="Receiver Settings" href="rx_setting.html"/>
+        <link rel="prev" title="UI" href="../ui/pna_ui.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> PNA6
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../installation/pna_installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../quick/pna_quick.html">Quick Start Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../devmode/pna_devmode.html">Device Modes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ui/pna_ui.html">UI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html">Receiver Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html">Transmitter Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html">Signal Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scope.html">Oscilloscope</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html">Spectrum</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vna.html">Vector Network Analyzer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html">Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html">Development</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../firmware/pna_firmware.html">Firmware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/about_us.html">About</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">PNA6</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+      
+    <li>API</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/api/pna_api.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api">
+<h1>API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<p>Commands list accessible on board interface and PNA firmware:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rx_setting.html">Receiver Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-bandwidth">Receiver Bandwidth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-lna">Receiver LNA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-agc">Receiver AGC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-sampling-rate">Receiver Sampling Rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-lo-frequency">Receiver LO Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-port-setting">Receiver Port Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-baseband-dc-offset-tracking">Receiver Baseband DC Offset Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-rf-dc-offset-tracking">Receiver RF DC Offset Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-quadrature-tracking">Receiver Quadrature Tracking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rx_setting.html#receiver-fir-filter-enable">Receiver FIR Filter Enable</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tx_setting.html">Transmitter Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-bandwidth">Transmitter Bandwidth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-vga">Transmitter VGA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-sampling-rate">Transmitter Sampling Rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-lo-frequency">Transmitter LO Frequency</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-port-setting">Transmitter Port Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-output-enable">Transmitter Output Enable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tx_setting.html#transmitter-fir-filter-enable">Transmitter FIR Filter Enable</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="signal_gen.html">Signal Generation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#signal-power">Signal Power</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#signal-sample-size">Signal Sample Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#narrow-loop-filter">Narrow Loop Filter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#sine-wave-signal">Sine Wave Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#pulse-wave-signal">Pulse Wave Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#dc-wave-signal">DC Wave Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#sinc-wave-signal">SINC Wave Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#triangle-wave-signal">Triangle Wave Signal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="signal_gen.html#arbitrary-wave-generation">Arbitrary Wave Generation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scope.html">Oscilloscope</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scope.html#adc-trigged">ADC Trigged</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="spec.html">Spectrum</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#fft-size">FFT Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#sweep-time">Sweep Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#flat-top-window">Flat Top Window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#fill-profile">Fill Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#spectrum-data">Spectrum Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="spec.html#sweep-data">Sweep Data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vna.html">Vector Network Analyzer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug.html">Debug</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#register-setting">Register Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#emio-registers-setting">EMIO Registers Setting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#debug-attributes">Debug Attributes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="development.html#response-format">Response Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#fir-filter-coefficients-file">FIR Filter Coefficients File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#dual-channel">Dual Channel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="development.html#exit">Exit</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="rx_setting.html" class="btn btn-neutral float-right" title="Receiver Settings" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../ui/pna_ui.html" class="btn btn-neutral" title="UI" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2022, Ehsan Akhavan.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

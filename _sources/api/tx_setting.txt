@@ -1,0 +1,150 @@
+Transmitter Settings
+--------------------
+
+Transmitter Bandwidth
+=====================
+
+.. code-block:: bash
+
+  tx_bandwidth bw
+
+* ``bw (float)`` : bandwidth in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 200
+     - 56000
+     - KHz
+     
+.. NOTE::
+
+  Set ``bw`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``bw`` value. example: ``100M``.
+
+.. HINT::
+
+  Without entering ``bw`` argument, transmitter bandwidth could be read.
+
+Transmitter VGA
+===============
+
+.. code-block:: bash
+
+  vga channel gain
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``gain (int)`` : vga gain in terms of ``db``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - -89
+     - 0
+     - dB
+
+.. HINT::
+
+  Without entering ``gain`` argument, desired transmitter VGA could be read.
+
+Transmitter Sampling Rate
+=========================
+
+.. code-block:: bash
+
+  tx_sample_rate rate
+
+* ``rate (float)`` : sampling rate in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 2100
+     - 61440
+     - KHz
+     
+.. NOTE::
+
+	Set ``rate`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``rate`` value. example: ``100M``.
+	
+.. HINT::
+
+  Without entering ``rate`` argument, transmitter sampling rate could be read.
+
+Transmitter LO Frequency
+========================
+
+.. code-block:: bash
+
+  tx_freq freq
+  
+* ``freq (float)`` : sampling rate in terms of ``Hz``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 70
+     - 6000
+     - MHz
+     
+.. NOTE::
+
+	Set ``freq`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``freq`` value. example: ``100M``.
+	
+.. HINT::
+
+  Without entering ``freq`` argument, transmitter LO-frequency could be read.
+	
+Transmitter Port Setting
+=====================
+
+.. code-block:: bash
+
+  rx_port port
+  
+* ``port (string)`` : transmitter port id, example: ``A``/``B``/``C``.
+
+.. HINT::
+
+  Without entering ``port`` argument, selected transmitter port could be read.
+	
+Transmitter Output Enable
+=========================
+
+.. code-block:: bash
+
+  tx_rf_out en
+  
+* ``en (int)`` : enable/disable transmitter.
+
+.. HINT::
+
+  Without entering ``en`` argument, transmitter enabled state could be read.
+
+Transmitter FIR Filter Enable
+=============================
+
+.. code-block:: bash
+
+  tx_fir_en en
+  
+* ``en (int)`` : enable/disable transmitter FIR filter.
+
+.. HINT::
+
+  Without entering ``en`` argument, transmitter FIR filter enabled state could be read.

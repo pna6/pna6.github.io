@@ -1,0 +1,140 @@
+Spectrum
+--------
+
+FFT Size
+========
+
+.. code-block:: bash
+
+  rx_sample_size size
+
+* ``size (int)`` : length of FFT.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+   * - 16
+     - 8192
+     
+.. CAUTION::
+
+  Set ``size`` argument value, powers of two. example: 256, 4096.
+
+.. HINT::
+
+  Without entering ``size`` argument, FFT size could be read.
+
+Sweep Time
+==========
+
+Prints sweep time
+
+.. code-block:: bash
+
+  sweep_time
+  
+Flat Top Window
+===============
+
+Enables flat top window for scope and spectrum results.
+
+.. code-block:: bash
+
+  flat_top en
+  
+.. HINT::
+
+  Without entering ``en`` argument, flat top filter enabled state could be read.
+
+Fill Profile
+============
+
+Save AD9361 Calibration coefficients for fast sweeping.
+
+.. code-block:: bash
+
+  fillpro freq span
+  
+* ``freq (int)`` : center frequency of sweep.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 70
+     - 6000
+     - MHz
+     
+* ``span (int)`` : span of sweep.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - 40
+     - 6000
+     - MHz
+     
+.. NOTE::
+
+	Set ``freq`` or ``span`` in ``MHz`` or ``KHz`` by adding ``M`` or ``K`` at the end of ``freq`` or ``span`` value. example: ``100M``.
+
+Spectrum Data
+=============
+
+Command
+^^^^^^^
+
+.. code-block:: bash
+
+  fft_span span channel zip
+     
+* ``span (float)`` : portion of spectrum near LO frequency relative to receiver sampling rate.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+   * - 0
+     - 1
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``zip (int)`` : compression enable state.
+
+Response
+^^^^^^^^
+.. image:: ../_static/PNA_Frame.png
+    :alt: frame
+    :width: 600px
+    :align: left
+    
+Sweep Data
+==========
+
+Command
+^^^^^^^
+
+.. code-block:: bash
+
+  sweep channel zip
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``zip (int)`` : compression enable state.
+
+Response
+^^^^^^^^
+.. image:: ../_static/PNA_Frame.png
+    :alt: frame
+    :width: 600px
+    :align: left

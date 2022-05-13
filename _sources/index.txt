@@ -21,8 +21,9 @@ This wiki provides developers using PNA with software and documentation, includi
    quick/pna_quick
    devmode/pna_devmode
    ui/pna_ui
-   about/about_us
+   api/pna_api
    firmware/pna_firmware
+   about/about_us
 
 .. HINT::
 

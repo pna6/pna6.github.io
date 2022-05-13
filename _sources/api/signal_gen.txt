@@ -1,0 +1,279 @@
+Signal Generation
+-----------------
+
+Signal Power
+=====================
+
+.. code-block:: bash
+
+  sig_pow channel power
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+* ``power (int)`` : signal power in terms of ``db``.
+
+.. list-table::
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+     - Unit
+   * - -130
+     - 30
+     - dBm
+     
+.. HINT::
+
+  Without entering ``power`` argument, desired signal power could be read.
+  
+Signal Sample Size
+=======================
+
+.. code-block:: bash
+
+  tx_sample_size size
+
+* ``size (int)`` : Signal sample size.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+   * - 16
+     - 8192
+     
+.. HINT::
+
+  Without entering ``size`` argument, signal sample size could be read.
+
+Narrow Loop Filter
+==================
+
+.. code-block:: bash
+
+  nlf en
+  
+.. HINT::
+
+  Without entering ``en`` argument, narrow loop filter enabled state could be read.
+
+Sine Wave Signal
+================
+
+.. code-block:: bash
+
+  sin_iq mode_iq period offset channel
+
+* ``mode_iq (int)`` : I/Q selection.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Mode
+     - Value
+   * - Inphase
+     - 1
+   * - Quadrature
+     - 2
+   * - I/Q
+     - 3
+
+* ``period (int)`` : number of periods in signal sample size. specifies baseband frequency of sine signal.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 0
+     - 8192
+     
+* ``offset (int)`` : digital offset gain for fine tuning signal. described in terms of ``dBm x 100``. example: -100 = -1.0 dBm.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - -100
+     - 100
+     
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+Pulse Wave Signal
+=================
+
+.. code-block:: bash
+
+  pulse_iq mode_iq period duty_cycle offset channel
+
+* ``mode_iq (int)`` : I/Q selection.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Mode
+     - Value
+   * - Inphase
+     - 1
+   * - Quadrature
+     - 2
+   * - I/Q
+     - 3
+
+* ``period (int)`` : number of periods in signal sample size. specifies baseband frequency of pulse signal.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 0
+     - 8192
+
+* ``duty_cycle (int)`` : duty cycle of pulse signal.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 0
+     - 1
+
+* ``offset (int)`` : digital offset gain for fine tuning signal. described in terms of ``dBm x 100``. example: -100 = -1.0 dBm.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - -100
+     - 100
+     
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+DC Wave Signal
+================
+
+.. code-block:: bash
+
+  sin_dc offset channel
+     
+* ``offset (int)`` : digital offset gain for fine tuning signal. described in terms of ``dBm x 100``. example: -100 = -1.0 dBm.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - -100
+     - 100
+     
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+SINC Wave Signal
+================
+
+.. code-block:: bash
+
+  sinc freq channel
+     
+* ``freq (float)`` : SINC frequency.    
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+Triangle Wave Signal
+====================
+
+.. code-block:: bash
+
+  triangle period channel
+     
+* ``period (int)`` : number of periods in signal sample size. specifies baseband frequency of triangle signal.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 0
+     - 8192   
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+Arbitrary Wave Generation
+=========================
+AWG has two phases:
+
+#. sending command of AWG
+
+#. sending AWG signal samples
+
+Command
+^^^^^^^
+
+.. code-block:: bash
+
+  awg len offset channel [dig_amp]
+
+* ``len (int)`` : length of AWG signal complex samples.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 4
+     - 8192
+     
+* ``offset (int)`` : digital offset gain for fine tuning signal. described in terms of ``dBm x 100``. example: -100 = -1.0 dBm.
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - -100
+     - 100
+
+* ``channel (int)`` : channel id, example: ``1``/``2``.
+
+* ``dig_amp (int)`` :  digital amplitude is an optional argument, setting maximum value of signal at DAC output (default value is 8192).
+
+.. list-table::
+   :widths: 25 25
+   :header-rows: 1
+   
+   * - Minimum
+     - Maximum
+   * - 0
+     - 8192
+
+Samples
+^^^^^^^
+
+AWG samples transform to [0-8192] I/Q string arrays then concatenate and send to PNA board.
+
+.. image:: ../_static/PNA_AWG.png
+    :alt: awg
+    :width: 700px
+    :align: left
+
+Between phases, no other commands is allowed.
+
+.. HINT::
+
+  Escape string for AWG signal samples wait state is ``k\r\n`` or ``k\n``.
+  

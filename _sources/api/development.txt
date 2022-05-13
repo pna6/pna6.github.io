@@ -1,0 +1,37 @@
+Development
+-----------
+
+Response Format
+===============
+
+.. figure:: ../_static/PNA_Response.png
+    :alt: Result of Fsa.draw
+    :align: left
+    :figwidth: 700px
+
+FIR Filter Coefficients File
+============================
+
+FIR filter coefficients file could be generated with AD9361 Filter Design Wizard in MATLAB.
+
+.. code-block:: bash
+
+  fir_coef file_name
+
+* ``file_name (string)`` : filter file name with ``.ftr`` extension. Filter file is saved under path ``/etc/pna_iio/*.ftr`` but file name does not include path.
+  
+Dual Channel
+============
+
+Prints whether board has 2 channels or only one.
+
+.. code-block:: bash
+
+  is_dual
+   
+Exit
+====
+
+.. code-block:: bash
+
+  exit

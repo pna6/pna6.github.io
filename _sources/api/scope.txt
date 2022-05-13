@@ -1,0 +1,51 @@
+Oscilloscope
+------------
+
+ADC Trigged
+===========
+
+Command
+^^^^^^^
+
+.. code-block:: bash
+
+  adc_trig mode level port zip
+
+* ``mode (int)`` : trigger slope and inphase/quadrature trigger.
+
+.. list-table:: Modes 
+   :widths: 25 25 25
+   :header-rows: 1
+
+   * - 
+     - Inphase
+     - Quadrature
+   * - Positive
+     - 1
+     - 2
+   * - Negative
+     - 3
+     - 4
+
+* ``level (int)`` : trigger level.
+
+.. list-table:: Level
+   :widths: 25 25
+   :header-rows: 1
+
+   * - Minimum
+     - Maximum
+   * - -4096
+     - 4096
+     
+* ``port (int)`` : port id, example: ``1``/``2``.
+* ``zip (int)`` : enable/disable compression.
+
+Response
+^^^^^^^^
+
+.. image:: ../_static/PNA_Frame.png
+    :alt: frame
+    :width: 600px
+    :align: left
+   

@@ -1,0 +1,41 @@
+Debug
+-----
+
+Register Setting
+================
+
+.. code-block:: bash
+
+  reg address value
+
+* ``address (hex)`` : address of register.
+* ``value (hex)`` : value of register, should be started with ``0x``.  example: ``0x12``.
+
+.. HINT::
+
+  Without entering ``value`` argument, desired register could be read.
+
+EMIO Registers Setting
+======================
+
+.. code-block:: bash
+
+  emio base nch value
+
+* ``base (int)``: base address of desired bundled emio registers relative to base address of emio registers.
+* ``nch (int)``: number of emio registers bundled together.
+* ``value (int)``: value for bundled emio registers.
+     
+Debug Attributes
+================
+
+.. code-block:: bash
+
+  dbg attr value
+
+* ``attr (string)``: attribute name.
+* ``value (list of strings)``: value(s) of attribute (if multiple value for attribute required, they sould be separated by space).
+
+.. HINT::
+
+  Without entering ``value`` argument, desired attribute could be read.

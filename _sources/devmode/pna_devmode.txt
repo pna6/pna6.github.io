@@ -1,8 +1,8 @@
 Device Modes
 =================
 
-Oscillocope
-""""""""""""""""""""""
+Oscilloscope
+""""""""""""
 High Speed I/Q Realtime Oscilloscope
 
 .. image:: ../_static/PNA_Scope.png
@@ -11,7 +11,7 @@ High Speed I/Q Realtime Oscilloscope
     :align: center
 
 Spectrum Analyzer
-""""""""""""""""""""""
+"""""""""""""""""
 Wideband Realtime Spectrum Analyzer
 
 .. image:: ../_static/PNA_Spectrum.png
@@ -20,7 +20,7 @@ Wideband Realtime Spectrum Analyzer
     :align: center
 
 Signal Generator
-""""""""""""""""""""""
+""""""""""""""""
 Arbitary Waveform I/Q Signal Generator
 
 .. image:: ../_static/PNA_Signal.png
@@ -29,10 +29,10 @@ Arbitary Waveform I/Q Signal Generator
     :align: center
 
 Smith Chart
-""""""""""""""""""""""
+"""""""""""
 Full 2-Port Vector Network Analyzer in ``Smith Chart`` Mode
 
 
 Bode Plot
-""""""""""""""""""""""
+"""""""""
 Full 2-Port Vector Network Analyzer in ``Frequency Response`` Mode
