@@ -11,7 +11,7 @@ PNA6 Wiki
     :align: center
     :target: https://pna6.github.io/
 
-This wiki provides developers using PNA with software and documentation, including firmware code, software installation, and quick start guide for board setup. It also contains user guides for PNA-UI to help engineers get up and running fast. Our Great `Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_.
+This wiki provides developers how to use PNA6 software and documents all the available APIs. It also includes documentation around the firmware codes, software installation, and quick start guide for first time usage. Please check out our great `PNA UI Youtube Demo <https://www.youtube.com/watch?v=JDrA8S68Gfg>`_ to get a quick glimpse of our user interface.
 
 .. toctree::
    :maxdepth: 2
@@ -27,7 +27,7 @@ This wiki provides developers using PNA with software and documentation, includi
 
 .. HINT::
 
-  I'm a noob sphinx user trying to test its shitty features. [#f1]_
+  To know more about PNA6 you can access Binaee Site. [#f1]_
 
 .. [#f1] You can find BB at http://binaee.com/pna6.php
    
